@@ -3,6 +3,15 @@ uuid = "3bea2672-a09c-4561-8316-356d6d693952"
 authors = ["Alec Pankow", "Ben Murrell"]
 version = "0.1.0"
 
+[deps]
+CSV = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
+DPMeansClustering = "37097376-7805-5844-a42f-f170eef30b7c"
+MultivariateStats = "6f286f6a-111f-5878-ab1e-185364afe411"
+NextGenSeqUtils = "59ec5594-ae11-5d8d-a868-831a7e904d88"
+PyPlot = "d330b81b-6aea-500a-939a-2ce795aea3ee"
+RobustAmpliconDenoising = "4bd7a7d9-cbc9-5944-9319-21f5e7d2c618"
+StatsBase = "2913bbd2-ae8a-5f71-8c99-4fb6c76f3a91"
+
 [compat]
 julia = "1"
 
