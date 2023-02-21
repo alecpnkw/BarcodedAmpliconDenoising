@@ -1,4 +1,4 @@
-module PacBioSGA
+module BarcodedAmpliconDenoising
 
 using NextGenSeqUtils: double_primer_trim, read_fastq, write_fasta, kmer_count, corrected_kmer_dist, FAD
 using RobustAmpliconDenoising: consensus_seq, denoise
@@ -7,11 +7,15 @@ using MultivariateStats: transform, MDS
 using StatsBase
 using PyPlot
 
-include("consensus.jl")
+include("denoise_and_cluster.jl")
+include("SGA_pipeline.jl")
 include("visualization.jl")
 
-# consensus.jl...
-export reconstruct_reads,
+# denoise_and_cluster.jl...
+export denoise_and_cluster,
+
+# SGA_pipeline.jl...
+SGA_pipeline,
 
 # visualization.jl...
 digital_gel_plot,

@@ -1,4 +1,4 @@
-name = "PacBioSGA"
+name = "BarcodedAmpliconDenoising"
 uuid = "3bea2672-a09c-4561-8316-356d6d693952"
 authors = ["Alec Pankow", "Ben Murrell"]
 version = "0.1.0"

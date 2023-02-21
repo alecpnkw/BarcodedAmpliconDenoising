@@ -21,7 +21,6 @@ function digital_gel_plot(files; labels = nothing, alpha = 0.025, height = 6, gr
     end
     plot(x_pos,points,alpha = alpha,".",color = "grey")
     if !isnothing(labels)
-        m = maximum(points)
         for i in 1:count
             text((i - 0.5) / count, 1.05, label_text[i] , rotation=90, transform = ax.transAxes)
         end
