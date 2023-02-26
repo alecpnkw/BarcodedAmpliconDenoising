@@ -6,7 +6,7 @@ A Julia-based toolkit for consensus sequence generation from PacBio amplicon seq
 
 The core consensus generation method, `denoise_and_cluster()`, is based on the [RobustAmpliconDenoising.jl](https://github.com/MurrellGroup/RobustAmpliconDenoising.jl) package, but additionally clusters denoised sequence variants to collapse sequences likely generated via PCR errors during the amplification process. 
 
-For ease of setting up new pipelines, we define a `SGA_pipeline()` function that preprocesses sequences, and calls this method. A standalone .ipynb running through the full analysis is included, along with several vizualization utilities at[BarcodedAmpliconDenoising.ipynb](notebooks/BarcodedAmpliconDenoising.ipynb).
+For ease of setting up new pipelines, we define a `SGA_pipeline()` function that preprocesses sequences, and calls this method. A standalone .ipynb running through the full analysis is included, along with several vizualization utilities at [BarcodedAmpliconDenoising.ipynb](notebooks/BarcodedAmpliconDenoising.ipynb).
 
 ## Setup
 
