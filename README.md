@@ -8,19 +8,13 @@ The core consensus generation method, `denoise_and_cluster()`, is based on the [
 
 For ease of setting up new pipelines, we define a `SGA_pipeline()` function that preprocesses sequences, and calls this method. A standalone .ipynb running through the full analysis is included, along with several vizualization utilities at [BarcodedAmpliconDenoising.ipynb](notebooks/BarcodedAmpliconDenoising.ipynb).
 
-## Setup
+## Installation
 
-Activate the included environment from the Julia package manager. 
-
-```julia
-pkg> activate .
-pkg> instantiate
-pkg> precompile
-```
-
-Note: Installation depends on NextGenSeqUtils rev 1.5.3, which can be installed manually using
+Installation depends on NextGenSeqUtils rev 1.5.3, which is not yet registered on Julia 1.0. To install, please run the following in the Julia REPL. 
 
 ```juila
 using Pkg
-kg.add(PackageSpec(name="NextGenSeqUtils", rev="1.5.3", url = "https://github.com/MurrellGroup/NextGenSeqUtils.jl.git"))
+Pkg.add(PackageSpec(name="NextGenSeqUtils", rev="1.5.3", url = "https://github.com/MurrellGroup/NextGenSeqUtils.jl.git"))
+Pkg.add(PackageSpec(name="DPMeansClustering", rev="1.0", url = "https://github.com/MurrellGroup/DPMeansClustering.jl.git"))
+Pkg.add(PackageSpec(name="RobustAmpliconDenoising", rev="1.0", url = "https://github.com/MurrellGroup/RobustAmpliconDenoising.jl.git"))
 ```
